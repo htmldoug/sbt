@@ -1,3 +1,7 @@
+
+resolvers += Resolver.url("Ivy Plugin Releases", url("https://artifacts.werally.in/artifactory/ivy-plugins-release"))(Resolver.ivyStylePatterns)
+resolvers += "Maven Plugin Releases" at "https://artifacts.werally.in/artifactory/plugins-release"
+
 scalacOptions ++= Seq("-feature", "-language:postfixOps", "-Ywarn-unused:_,-imports")
 
 addSbtPlugin("com.dwijnand" % "sbt-dynver" % "4.0.0")
